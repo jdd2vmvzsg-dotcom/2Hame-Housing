@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============================================================
+    PRIMARY META TAGS — For Google Search Results
+    ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Hame — Kenya's #1 Property Marketplace | Buy, Rent, Sell & Manage Real Estate</title>
+    <meta name="description" content="2Hame is Kenya's leading PropTech platform for house hunting, property listings, rentals, land sales, property management, and moving services. Find verified properties in Nairobi, Kisumu, Nakuru, Mombasa & nationwide.">
+    <meta name="keywords" content="Kenya property listings, house hunting Kenya, apartments for rent, property management, real estate Kenya, land for sale, 2Hame, PropTech, rental management, tenant software">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://2hame.com">
+    
+    <!-- ============================================================
+    OPEN GRAPH / SOCIAL MEDIA META TAGS
+    ============================================================ -->
+    <meta property="og:title" content="2Hame — Kenya's #1 Property Marketplace">
+    <meta property="og:description" content="Find, list, manage, and move — all on Kenya's smartest real estate platform. Verified properties across all 47 counties.">
+    <meta property="og:url" content="https://2hame.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://2hame.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- ============================================================
+    TWITTER CARD
+    ============================================================ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2Hame — Kenya's #1 Property Marketplace">
+    <meta name="twitter:description" content="Find verified properties in Kenya. Rent, buy, sell, and manage real estate with ease.">
+    <meta name="twitter:image" content="https://2hame.com/og-image.jpg">
+    
+    <!-- ============================================================
+    FAVICON
+    ============================================================ -->
+    <link rel="icon" href="https://2hame.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://2hame.com/favicon.ico">
+    
+    <!-- ============================================================
+    SCHEMA.ORG STRUCTURED DATA (JSON-LD)
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "2Hame",
+      "url": "https://2hame.com",
+      "logo": "https://2hame.com/favicon.ico",
+      "description": "Kenya's leading PropTech platform for property listings, house hunting, rentals, land sales, and property management.",
+      "sameAs": [
+        "https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y",
+        "https://twitter.com/2hame",
+        "https://instagram.com/2hame",
+        "https://facebook.com/2hame",
+        "https://linkedin.com/company/2hame"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@2hame.com",
+        "contactType": "Customer Support",
+        "availableLanguage": ["English", "Swahili"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Kenya"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "2Hame",
+      "url": "https://2hame.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://2hame.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- ============================================================
+    STYLES — Pure CSS, No Dependencies
+    ============================================================ -->
+    <style>
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        
+        a {
+            color: #1e7b4c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+        }
+        
+        /* ----- TYPOGRAPHY ----- */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.3;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+        h1 { font-size: 2.6rem; }
+        h2 { font-size: 2.0rem; border-bottom: 3px solid #e2e8f0; padding-bottom: 0.3rem; }
+        h3 { font-size: 1.5rem; }
+        h4 { font-size: 1.2rem; }
+        
+        p {
+            margin-bottom: 1.2rem;
+        }
+        
+        /* ----- HEADER / HERO ----- */
+        .hero {
+            text-align: center;
+            padding: 20px 0 30px;
+            border-bottom: 2px solid #eef2f6;
+        }
+        .hero img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .hero h1 {
+            margin-top: 0.2rem;
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #0f3b2c, #1e7b4c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: #334155;
+            font-weight: 500;
+        }
+        .hero .sub {
+            color: #475569;
+            max-width: 700px;
+            margin: 0.5rem auto 1.2rem;
+        }
+        
+        .badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .badge {
+            display: inline-block;
+            background: #eef2f6;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #0f172a;
+            transition: 0.2s;
+        }
+        .badge:hover {
+            background: #1e7b4c;
+            color: #fff;
+            text-decoration: none;
+        }
+        .badge.green {
+            background: #1e7b4c;
+            color: #fff;
+        }
+        .badge.green:hover {
+            background: #145a38;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin: 24px 0 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: 0.25s;
+            border: 2px solid transparent;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: #1e7b4c;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background: #145a38;
+            transform: scale(1.02);
+            text-decoration: none;
+        }
+        .btn-outline {
+            background: transparent;
+            border-color: #1e7b4c;
+            color: #1e7b4c;
+        }
+        .btn-outline:hover {
+            background: #1e7b4c;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        /* ----- SECTIONS ----- */
+        section {
+            margin: 3rem 0;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 20px 22px;
+            border: 1px solid #e2e8f0;
+            transition: 0.2s;
+        }
+        .card:hover {
+            border-color: #1e7b4c;
+            box-shadow: 0 4px 16px rgba(30, 123, 76, 0.08);
+        }
+        .card h4 {
+            margin-top: 0;
+            margin-bottom: 0.4rem;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        /* ----- TABLES ----- */
+        .table-wrap {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background: #f1f5f9;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        tr:hover {
+            background: #f8fafc;
+        }
+        
+        /* ----- FAQ (collapsible) ----- */
+        details {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin-bottom: 12px;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+        }
+        details summary {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        details p {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-left: 6px;
+        }
+        
+        /* ----- FOOTER ----- */
+        .footer {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 2px solid #eef2f6;
+            color: #475569;
+        }
+        .footer .heart {
+            color: #b91c1c;
+        }
+        
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 768px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 2.0rem; }
+            h2 { font-size: 1.6rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .btn { padding: 12px 22px; font-size: 0.95rem; }
+            .badge-group { gap: 8px; }
+        }
+        
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero .tagline { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <header class="hero">
+        <img src="https://2hame.com/favicon.ico" alt="2Hame Logo - Kenya Property Marketplace" width="100" height="100">
+        <h1>2Hame</h1>
+        <p class="tagline">🇰🇪 Kenya's Smart Property Marketplace</p>
+        <p class="sub"><strong>Find • List • Manage • Move</strong> — The all-in-one real estate ecosystem for house hunting, rentals, land sales, property management, and moving services.</p>
+        
+        <div class="cta-buttons">
+            <a href="https://2hame.com" class="btn btn-primary">🌐 Visit 2Hame.com</a>
+            <a href="https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y" class="btn btn-outline">📱 Join WhatsApp</a>
+        </div>
+        
+        <div class="badge-group">
+            <span class="badge green">✅ 10,000+ Listings</span>
+            <span class="badge">📍 47 Counties</span>
+            <span class="badge">🏠 Verified Properties</span>
+            <span class="badge">📊 Free Listings</span>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    WHY 2HAME
+    ============================================================ -->
+    <section>
+        <h2>🔍 Why 2Hame?</h2>
+        <p>The Kenyan real estate market is fragmented. Fake listings, hidden fees, and outdated data make house hunting stressful. <strong>2Hame fixes all of that.</strong></p>
+        
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Problem</th><th>2Hame Solution</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>❌ Fake property listings</td><td>✅ Verified listings with owner/agent credentials</td></tr>
+                    <tr><td>❌ Multiple broker fees</td><td>✅ Direct connections — no middlemen</td></tr>
+                    <tr><td>❌ Outdated advertisements</td><td>✅ Real-time availability updates</td></tr>
+                    <tr><td>❌ Difficult property management</td><td>✅ All-in-one dashboard for landlords</td></tr>
+                    <tr><td>❌ Scattered property data</td><td>✅ Centralized search across all counties</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHO WE SERVE
+    ============================================================ -->
+    <section>
+        <h2>🎯 Who We Serve</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h4>🏠 House Hunters</h4>
+                <p>Find verified rentals, homes, and land across Kenya with smart filters and maps.</p>
+            </div>
+            <div class="card">
+                <h4>🏢 Landlords</h4>
+                <p>List properties, track tenants, collect rent, and manage multiple units from one dashboard.</p>
+            </div>
+            <div class="card">
+                <h4>🌍 Land Owners</h4>
+                <p>Sell residential, commercial, or agricultural land to thousands of serious buyers.</p>
+            </div>
+            <div class="card">
+                <h4>👨‍💼 Real Estate Agents</h4>
+                <p>Build your brand, generate leads, and list unlimited properties with zero caps.</p>
+            </div>
+            <div class="card">
+                <h4>🏗 Property Developers</h4>
+                <p>Showcase off-plan projects, new developments, and attract investors.</p>
+            </div>
+            <div class="card">
+                <h4>🚚 Moving Companies</h4>
+                <p>Connect with clients needing local or inter-county relocation services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    HOUSE HUNTING
+    ============================================================ -->
+    <section>
+        <h2>🏠 House Hunting in Kenya</h2>
+        <p>Search thousands of verified properties across <strong>Nairobi, Kisumu, Mombasa, Nakuru, Eldoret, Thika, Machakos, Kiambu</strong>, and all 47 counties.</p>
+        
+        <h3>Property Types</h3>
+        <div class="grid-2">
+            <div class="card">
+                <ul>
+                    <li>Apartments (1, 2, 3-bedroom)</li>
+                    <li>Bedsitters &amp; Studios</li>
+                    <li>One, Two &amp; Three Bedroom Houses</li>
+                    <li>Maisonettes &amp; Villas</li>
+                    <li>Student Hostels</li>
+                </ul>
+            </div>
+            <div class="card">
+                <ul>
+                    <li>Family Homes &amp; Airbnb Rentals</li>
+                    <li>Commercial Buildings, Offices &amp; Shops</li>
+                    <li>Warehouses &amp; Industrial Units</li>
+                    <li>Residential, Commercial &amp; Agricultural Land</li>
+                    <li>Investment Land, Plots &amp; Farms</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Smart Search Filters</h3>
+        <p>📍 County, Town &amp; Estate &bull; 💰 Price Range &bull; 🛏 Bedrooms &amp; Bathrooms &bull; 🏊 Amenities (Pool, Gym, Parking, Security, Solar) &bull; 🏫 Nearby Schools &bull; 🏥 Nearby Hospitals</p>
+    </section>
+
+    <!-- ============================================================
+    PROPERTY MANAGEMENT
+    ============================================================ -->
+    <section>
+        <h2>🛠 Property Management Software</h2>
+        <p>Manage <strong>multiple properties</strong> from a single, intuitive dashboard.</p>
+        <div class="grid-2">
+            <div class="card">
+                <h4>📊 Tenant Tracking</h4>
+                <p>View all tenants per property with lease details.</p>
+            </div>
+            <div class="card">
+                <h4>💰 Rent Collection</h4>
+                <p>Track payments, send automated reminders, and receive late payment alerts.</p>
+            </div>
+            <div class="card">
+                <h4>📁 Tenant Records</h4>
+                <p>Store leases, IDs, contacts, and inspection logs securely.</p>
+            </div>
+            <div class="card">
+                <h4>📈 Property Analytics</h4>
+                <p>Income reports, expense tracking, occupancy rates, and vacancy monitoring.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    COMING SOON
+    ============================================================ -->
+    <section>
+        <h2>🚀 Coming Soon</h2>
+        <div class="grid-3">
+            <div class="card">🧮 Mortgage Calculator</div>
+            <div class="card">🏦 Home Loan Integration</div>
+            <div class="card">🤖 AI House Assistant</div>
+            <div class="card">💳 Rent Collection Automation</div>
+            <div class="card">🔧 Maintenance Requests</div>
+            <div class="card">🛡 Tenant Screening</div>
+            <div class="card">📄 Digital Lease Agreements</div>
+            <div class="card">📱 Mobile Apps (iOS &amp; Android)</div>
+            <div class="card">✅ Property Verification Badge</div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TECHNOLOGY STACK
+    ============================================================ -->
+    <section>
+        <h2>🧰 Technology Stack</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h4>Backend</h4>
+                <ul>
+                    <li>Django (Python)</li>
+                    <li>Django REST Framework</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis (Caching)</li>
+                    <li>Celery (Task Queue)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Frontend &amp; Mobile</h4>
+                <ul>
+                    <li>React.js</li>
+                    <li>React Native + Expo</li>
+                    <li>Node.js (API Gateway)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Infrastructure</h4>
+                <ul>
+                    <li>Docker</li>
+                    <li>Nginx</li>
+                    <li>AWS (EC2, S3, RDS)</li>
+                    <li>GitHub Actions (CI/CD)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Security &amp; Performance</h4>
+                <ul>
+                    <li>HTTPS / SSL</li>
+                    <li>Rate Limiting</li>
+                    <li>Database Indexing</li>
+                    <li>CDN for static assets</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    MISSION & VISION
+    ============================================================ -->
+    <section>
+        <h2>🌍 Mission &amp; Vision</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h4>🎯 Our Mission</h4>
+                <p>To simplify property discovery, management, and relocation through technology — making real estate transparent, accessible, and fair for every Kenyan.</p>
+            </div>
+            <div class="card">
+                <h4>👁 Our Vision</h4>
+                <p>To become <strong>Africa's most trusted digital property ecosystem</strong>, connecting millions of users across the continent.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FAQ (STRUCTURED DATA READY)
+    ============================================================ -->
+    <section>
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <details>
+            <summary><strong>Is 2Hame free to use?</strong></summary>
+            <p>Yes! Basic property listings are completely free. Premium features (featured listings, advanced analytics) are available at affordable rates.</p>
+        </details>
+        
+        <details>
+            <summary><strong>How do I verify a property listing?</strong></summary>
+            <p>We verify owners and agents through official documentation (ID, KRA PIN, ownership documents). Verified listings receive a trust badge.</p>
+        </details>
+        
+        <details>
+            <summary><strong>Can I list land for sale?</strong></summary>
+            <p>Absolutely. We support residential, commercial, agricultural, and investment land listings of all sizes.</p>
+        </details>
+        
+        <details>
+            <summary><strong>Is 2Hame available outside Kenya?</strong></summary>
+            <p>Currently focused on Kenya, but we're expanding to other African countries in 2025.</p>
+        </details>
+        
+        <details>
+            <summary><strong>How do I contact the property owner?</strong></summary>
+            <p>Each listing has a contact form, phone number, and WhatsApp link. Owners and agents respond directly.</p>
+        </details>
+    </section>
+
+    <!-- ============================================================
+    SEO KEYWORDS (hidden but readable)
+    ============================================================ -->
+    <section style="font-size:0.85rem; color:#64748b; border-top:1px solid #e2e8f0; padding-top:20px;">
+        <p><strong>🔑 Keywords:</strong> Kenya property listings, house hunting Kenya, apartments for rent Nairobi, property management Kenya, real estate Kenya, land for sale Kenya, rent houses Kenya, property marketplace Kenya, rental management software, tenant management system, landlord software Kenya, moving services Kenya, PropTech Africa, real estate platform Kenya, property listings Nairobi, find houses Kenya, property search Kenya, 2Hame, buy land Kenya, sell property Kenya, commercial property Kenya, student hostels Nairobi, Airbnb Kenya, off-plan projects Kenya, estate management Kenya, property developers Kenya, real estate agents Kenya</p>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <p>
+            <strong>🌐 <a href="https://2hame.com">2Hame.com</a></strong> &bull;
+            📱 <a href="https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y">WhatsApp</a> &bull;
+            🐦 <a href="#">Twitter</a> &bull;
+            📸 <a href="#">Instagram</a> &bull;
+            📘 <a href="#">Facebook</a> &bull;
+            💼 <a href="#">LinkedIn</a>
+        </p>
+        <p>
+            <span class="heart">❤️</span> Built with love in Kenya 🇰🇪
+        </p>
+        <p style="font-size:0.9rem; color:#94a3b8;">
+            &copy; 2026 2Hame — Making property easier for everyone.
+        </p>
+    </footer>
+
+</div>
+<!-- END container -->
+
+</body>
+</html>
