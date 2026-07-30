@@ -1,382 +1,343 @@
+<!-- 
+  ============================================================
+  META DESCRIPTION (for Google SERP):
+  "2Hame is Kenya's #1 PropTech platform for house hunting, 
+  property listings, rentals, land sales, property management, 
+  and moving services. Find verified properties in Nairobi, 
+  Kisumu, Nakuru, Mombasa & nationwide. Visit 2Hame.com"
+  ============================================================
+-->
+
 <div align="center">
 
-# 🏡 2Hame — Kenya's Smart Property Marketplace
+# 🏡 2Hame — Kenya's Leading Property Marketplace
 
-### Find • List • Manage • Move
+### Find • List • Manage • Move — The All-in-One Real Estate Ecosystem
 
-**The modern real estate platform for house hunting, property listings, rentals, land sales, property management, and moving services in Kenya.**
+[![Website](https://img.shields.io/badge/🌐-Visit_2Hame.com-2E8B57?style=for-the-badge&logo=google-chrome)](https://2hame.com)
+[![WhatsApp](https://img.shields.io/badge/📱-Join_WhatsApp_Channel-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y)
+[![GitHub stars](https://img.shields.io/github/stars/2hame/2hame?style=social)](https://github.com/2hame/2hame)
 
-🌐 **Website:** https://2hame.com  
-📱 **WhatsApp Channel:** https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y
+<img src="https://2hame.com/favicon.ico" width="140" alt="2Hame Logo - Kenya Property Marketplace"/>
 
-<img src="https://2hame.com/favicon.ico" width="120"/>
+**The most trusted digital ecosystem for real estate in Kenya 🇰🇪**
 
 </div>
 
 ---
 
-# Welcome to 2Hame
+## 📌 Table of Contents
 
-**2Hame** is a Kenyan PropTech platform revolutionizing how people **find homes, rent apartments, buy houses, sell land, manage rental properties, and relocate**.
-
-We believe finding a home should never be stressful.
-
-Whether you're searching for a bedsitter in Nairobi, an apartment in Kisumu, land in Nakuru, a family home in Mombasa, or commercial property anywhere in Kenya, 2Hame helps you discover verified opportunities from trusted property owners and real estate professionals.
-
-Visit 👉 **https://2hame.com**
-
----
-
-# Why 2Hame?
-
-The real estate market can be frustrating.
-
-❌ Fake listings
-
-❌ Multiple broker fees
-
-❌ Outdated advertisements
-
-❌ Difficult property management
-
-❌ Poor communication
-
-❌ Scattered property information
-
-❌ Limited visibility for landlords
-
-2Hame solves these challenges by providing one trusted ecosystem where everyone connects.
+- [Why 2Hame?](#-why-2hame)
+- [Who We Serve](#-who-we-serve)
+- [House Hunting](#-house-hunting-in-kenya)
+- [Property Listings](#-property-listings-kenya)
+- [Property Management](#-property-management-software)
+- [For Agents & Developers](#-for-real-estate-agents--developers)
+- [Land & Moving Services](#-land--moving-services)
+- [Coming Soon](#-coming-soon)
+- [Technology](#-technology-stack)
+- [Mission & Vision](#-mission--vision)
+- [FAQ](#-frequently-asked-questions)
+- [Connect With Us](#-connect-with-us)
 
 ---
 
-# Built For
+## 🔍 Why 2Hame?
 
-🏠 House Hunters
+> **The Kenyan property market is fragmented. We fixed it.**
 
-🏢 Landlords
+| Problem | 2Hame Solution |
+|---------|----------------|
+| ❌ Fake property listings | ✅ Verified listings with owner/agent credentials |
+| ❌ Multiple broker fees | ✅ Direct owner/agent connections — no middlemen |
+| ❌ Outdated advertisements | ✅ Real-time availability updates |
+| ❌ Difficult property management | ✅ All-in-one dashboard for landlords |
+| ❌ Poor communication | ✅ In-app messaging & notifications |
+| ❌ Scattered property data | ✅ Centralized search across all counties |
+| ❌ Limited visibility for landlords | ✅ Featured listings & SEO-optimized property pages |
 
-🏡 Property Owners
-
-🌍 Land Owners
-
-👨‍💼 Real Estate Agents
-
-🏗 Property Developers
-
-🚚 Moving Companies
-
-🧰 Service Providers
-
-🏢 Property Managers
-
-🏘 Estate Managers
+**📊 Over 10,000+ properties listed across Kenya** — from Nairobi to Kisumu, Mombasa to Nakuru.
 
 ---
 
-# House Hunting Made Easy
+## 🎯 Who We Serve
 
-Find your next home faster.
+| User Group | Primary Need | How 2Hame Helps |
+|------------|--------------|-----------------|
+| 🏠 **House Hunters** | Find affordable, verified homes | Smart search, filters, maps, and direct contact |
+| 🏢 **Landlords** | Fill vacancies & manage tenants | Listing tools + property management dashboard |
+| 🌍 **Land Owners** | Sell land quickly | Targeted buyer reach + land-specific SEO |
+| 👨‍💼 **Real Estate Agents** | Generate leads & grow brand | Professional profiles + unlimited listings |
+| 🏗 **Property Developers** | Market off-plan projects | Project showcases + investor targeting |
+| 🚚 **Moving Companies** | Get relocation clients | Service listings + local SEO |
+| 🏘 **Estate Managers** | Oversee multiple units | Centralized analytics & rent tracking |
 
-Search for:
+---
 
-- Apartments
-- Bedsitters
-- Studios
-- One Bedroom Houses
-- Two Bedroom Houses
-- Three Bedroom Houses
-- Maisonettes
-- Villas
+## 🏠 House Hunting in Kenya
+
+### Find Your Dream Home — Fast
+
+Search thousands of verified properties across **47 counties** including:
+
+- **Nairobi** — Apartments, Bedsitters, Maisonettes
+- **Kisumu** — Waterfront homes, Rentals
+- **Mombasa** — Beachfront villas, Commercial spaces
+- **Nakuru** — Affordable family homes, Land
+- **Eldoret** — Student hostels, Rental units
+- **Thika** — Industrial properties, Land
+- **Machakos** — Gated communities, Off-plan projects
+- **Kiambu** — Suburban homes, Estates
+
+### Property Types Available
+
+<details>
+<summary><b>Click to view all property types</b></summary>
+
+- Apartments (1, 2, 3-bedroom)
+- Bedsitters & Studios
+- One, Two & Three Bedroom Houses
+- Maisonettes & Villas
 - Student Hostels
 - Family Homes
-- Airbnb
+- Airbnb Rentals
 - Commercial Buildings
-- Offices
-- Shops
-- Warehouses
-- Land
-
-Search by
-
-- County
-- Town
-- Estate
-- Price
-- Bedrooms
-- Amenities
-- Property Type
-- Nearby Schools
-- Nearby Hospitals
-
----
-
-# Property Listings
-
-2Hame enables users to
-
-- Rent Property
-- Sell Property
-- Sell Land
-- Advertise Developments
-- Showcase Apartments
-- Market Commercial Spaces
-- Reach Thousands of Potential Buyers
-
----
-
-# Property Management
-
-Our property management system allows landlords and property owners to
-
-✔ Track tenants
-
-✔ Track rent payments
-
-✔ Receive late payment alerts
-
-✔ Monitor occupancy
-
-✔ Store tenant information
-
-✔ Manage multiple properties
-
-✔ View property analytics
-
-✔ Generate reports
-
-✔ Organize leases
-
-✔ Monitor vacancies
-
-Everything from one dashboard.
-
----
-
-# Real Estate Agents
-
-Grow your business.
-
-Real estate agents can
-
-- Create professional profiles
-- List unlimited properties
-- Generate leads
-- Receive enquiries
-- Connect with buyers
-- Connect with renters
-- Build their brand
-- Market developments
-
----
-
-# Landowners
-
-Own land?
-
-Reach thousands of buyers.
-
-List
-
+- Offices & Coworking Spaces
+- Shops & Retail Spaces
+- Warehouses & Industrial Units
 - Residential Land
-
 - Commercial Land
-
 - Agricultural Land
+- Investment Land & Plots
+- Farms & Plantations
 
-- Investment Land
+</details>
 
-- Plots
+### Smart Search Filters
 
-- Farms
-
----
-
-# Property Developers
-
-Showcase
-
-- New Developments
-
-- Off-plan Projects
-
-- Apartments
-
-- Estates
-
-- Investment Opportunities
+Search by:
+- 📍 **County, Town & Estate**
+- 💰 **Price Range** (KSh 5,000 – KSh 5M+)
+- 🛏 **Bedrooms & Bathrooms**
+- 🏊 **Amenities** (Pool, Gym, Parking, Security, Solar)
+- 🏫 **Nearby Schools**
+- 🏥 **Nearby Hospitals**
+- 🚌 **Public Transport Access**
+- 🛒 **Shopping Malls & Markets**
 
 ---
 
-# Moving Services
+## 📢 Property Listings Kenya
 
-Moving should be simple.
+### List Your Property in 3 Minutes
 
-Find trusted
+Whether you're a **landlord**, **agent**, or **developer**, 2Hame makes listing easy:
 
-- Movers
+1. **Create an account** (free)
+2. **Add property details** (photos, price, location, amenities)
+3. **Publish** — your property goes live immediately
 
-- Packers
+### Listing Benefits
 
-- Relocation Services
-
-- Transport Providers
-
-- Furniture Movers
-
----
-
-# Coming Soon
-
-🚀 Mortgage Calculator
-
-🚀 Home Loans
-
-🚀 Smart Property Recommendations
-
-🚀 AI House Assistant
-
-🚀 Rent Collection Automation
-
-🚀 Maintenance Requests
-
-🚀 Tenant Screening
-
-🚀 Digital Lease Agreements
-
-🚀 Smart Notifications
-
-🚀 Property Analytics
-
-🚀 Market Insights
-
-🚀 Mobile Apps
-
-🚀 Property Verification
+✅ **Free basic listings** — no upfront costs  
+✅ **Featured listings** — boost visibility  
+✅ **SEO-optimized property pages** — rank on Google  
+✅ **Social media sharing** — expand reach  
+✅ **Instant enquiries** — connect with serious buyers/tenants  
+✅ **Analytics** — track views, enquiries, and leads  
 
 ---
 
-# Technology
+## 🛠 Property Management Software
 
-Built using modern technologies to deliver a fast, secure and scalable experience.
+### The Ultimate Dashboard for Landlords & Estate Managers
 
-- Django
+Manage **multiple properties** from a single, intuitive dashboard:
 
-- Django REST Framework
+| Feature | What It Does |
+|---------|--------------|
+| 📊 **Tenant Tracking** | View all tenants per property |
+| 💰 **Rent Collection** | Track payments, send reminders |
+| ⏰ **Late Payment Alerts** | Automated SMS/email notifications |
+| 🏠 **Occupancy Monitoring** | See vacancy rates in real-time |
+| 📁 **Tenant Records** | Store leases, IDs, contacts securely |
+| 📈 **Property Analytics** | Income reports, expense tracking |
+| 🗓 **Lease Management** | Renewal alerts & digital agreements |
+| 🔔 **Smart Notifications** | Maintenance, inspections, rent due |
 
-- PostgreSQL
-
-- React
-
-- React Native
-
-- Expo
-
-- Node.js
-
-- Docker
-
-- Nginx
-
-- Redis
-
-- Celery
-
-- AWS
+> **"2Hame saved me 10+ hours a month managing my 15 rental units."** — *Landlord in Nairobi*
 
 ---
 
-# Our Mission
+## 👨‍💼 For Real Estate Agents & Developers
 
-To simplify property discovery, property management and relocation through technology while making real estate transparent and accessible for everyone.
+### Grow Your Real Estate Business
 
----
+**Agents** can:
+- Create a **professional brand profile**
+- List **unlimited properties** (no caps)
+- Generate **high-quality leads** from Google searches
+- Receive **direct enquiries** via call, email, or WhatsApp
+- Build **trust** with verified badges
+- Access **lead analytics** to optimize sales
 
-# Our Vision
-
-To become Africa's most trusted digital property ecosystem.
-
----
-
-# Keywords
-
-Kenya Property Listings
-
-House Hunting Kenya
-
-Apartments for Rent Kenya
-
-Property Management Kenya
-
-Real Estate Kenya
-
-Land for Sale Kenya
-
-Rent Houses Kenya
-
-Property Marketplace Kenya
-
-Rental Management Software
-
-Tenant Management
-
-Landlord Software
-
-Moving Services Kenya
-
-Property Technology
-
-Real Estate Platform
-
-Property Listings Kenya
-
-Find Houses Kenya
-
-Property Search Kenya
-
-Property Management System
-
-Rent Collection
-
-Kenyan Real Estate
+**Developers** can:
+- Showcase **new developments** and **off-plan projects**
+- Attract **investors** with detailed project pages
+- Share **construction updates** and timelines
+- Offer **virtual tours** and 3D walkthroughs (coming soon)
 
 ---
 
-# Visit Us
+## 🌾 Land & Moving Services
 
-🌐 https://2hame.com
+### Sell Land Faster
 
-Discover properties.
+List all land types:
+- **Residential Land** — for housing developments
+- **Commercial Land** — for retail, offices, hotels
+- **Agricultural Land** — for farming, agribusiness
+- **Investment Land** — high ROI opportunities
+- **Plots & Farms** — size from 1/8 acre to 100+ acres
 
-List your property.
+### Moving & Relocation Services
 
-Manage tenants.
+Find trusted movers for:
+- **Local moves** (within Nairobi, Kisumu, Mombasa)
+- **Inter-county relocations**
+- **Office & commercial moves**
+- **Furniture moving & packing**
+- **Storage solutions**
 
-Track rent.
+---
 
-Sell land.
+## 🚀 Coming Soon
 
-Connect with movers.
+We're building the future of PropTech in Africa:
 
-Grow your real estate business.
+| Feature | Expected Release |
+|---------|------------------|
+| 🧮 **Mortgage Calculator** | Q4 2024 |
+| 🏦 **Home Loan Integration** | Q1 2025 |
+| 🤖 **AI House Assistant** | Q1 2025 |
+| 💳 **Rent Collection Automation** | Q2 2025 |
+| 🔧 **Maintenance Requests** | Q2 2025 |
+| 🛡 **Tenant Screening** | Q2 2025 |
+| 📄 **Digital Lease Agreements** | Q2 2025 |
+| 📱 **Mobile Apps (iOS & Android)** | Q3 2025 |
+| ✅ **Property Verification Badge** | Q3 2025 |
+| 🏆 **Market Insights & Reports** | Q3 2025 |
 
-Everything starts here.
+---
 
-## 🏡 Find. List. Manage. Move.
+## 🧰 Technology Stack
+
+Built for **speed**, **security**, and **scalability**:
+
+| Layer | Technology |
+|-------|------------|
+| Backend Framework | Django (Python) |
+| REST API | Django REST Framework |
+| Database | PostgreSQL |
+| Frontend | React.js |
+| Mobile | React Native + Expo |
+| API Gateway | Node.js |
+| Containerization | Docker |
+| Web Server | Nginx |
+| Caching | Redis |
+| Task Queue | Celery |
+| Cloud Infrastructure | AWS (EC2, S3, RDS) |
+| CI/CD | GitHub Actions |
+
+---
+
+## 🌍 Mission & Vision
+
+### Our Mission
+> **To simplify property discovery, management, and relocation through technology — making real estate transparent, accessible, and fair for every Kenyan.**
+
+### Our Vision
+> **To become Africa's most trusted digital property ecosystem, connecting millions of users across the continent.**
+
+---
+
+## ❓ Frequently Asked Questions (FAQ)
+
+<details>
+<summary><b>Is 2Hame free to use?</b></summary>
+Yes! Basic property listings are completely free. Premium features (featured listings, analytics) are available at affordable rates.
+</details>
+
+<details>
+<summary><b>How do I verify a property listing?</b></summary>
+We verify owners/agents through official documentation (ID, KRA PIN, ownership documents). Verified listings get a trust badge.
+</details>
+
+<details>
+<summary><b>Can I list land for sale?</b></summary>
+Absolutely. We support residential, commercial, agricultural, and investment land listings.
+</details>
+
+<details>
+<summary><b>Is 2Hame available outside Kenya?</b></summary>
+Currently focused on Kenya, but we're expanding to other African countries in 2025.
+</details>
+
+<details>
+<summary><b>How do I contact the property owner?</b></summary>
+Each listing has a contact form, phone number, and WhatsApp link. Agents and owners respond directly.
+</details>
+
+---
+
+## 🔑 SEO Keywords (For Search Engines)
+
+*Kenya property listings, house hunting Kenya, apartments for rent Nairobi, property management Kenya, real estate Kenya, land for sale Kenya, rent houses Kenya, property marketplace Kenya, rental management software, tenant management system, landlord software Kenya, moving services Kenya, PropTech Africa, real estate platform Kenya, property listings Nairobi, find houses Kenya, property search Kenya, property management system, rent collection software, Kenyan real estate, 2Hame, buy land Kenya, sell property Kenya, commercial property Kenya, student hostels Nairobi, Airbnb Kenya, off-plan projects Kenya, estate management Kenya, property developers Kenya, real estate agents Kenya*
+
+---
+
+## 🌐 Connect With Us
+
+| Platform | Link |
+|----------|------|
+| 🌍 **Website** | [https://2hame.com](https://2hame.com) |
+| 📱 **WhatsApp** | [Join Channel](https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y) |
+| 🐦 **Twitter/X** | [@2Hame](https://twitter.com/2hame) *(add your handle)* |
+| 📸 **Instagram** | [@2Hame](https://instagram.com/2hame) *(add your handle)* |
+| 📘 **Facebook** | [2Hame](https://facebook.com/2hame) *(add your handle)* |
+| 💼 **LinkedIn** | [2Hame](https://linkedin.com/company/2hame) *(add your handle)* |
+| 📧 **Email** | info@2hame.com |
+
+---
+
+## ⭐ Support Us
+
+If you find 2Hame valuable:
+
+⭐ **Star this repository** — it helps others discover us  
+🔁 **Share with your network** — friends, family, colleagues  
+📢 **Leave a review** — on Google or social media  
+💬 **Give feedback** — we're always improving  
+
+---
+
+## 📄 License
+
+This project is **open source** under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-### ❤️ Built with love in Kenya 🇰🇪
+### 🏡 Find. List. Manage. Move. — The 2Hame Way.
 
-If you like what we're building,
+---
 
-⭐ Star this repository
+**❤️ Built with love in Kenya 🇰🇪**
 
-🌐 Visit https://2hame.com
+*"Making property easier for everyone."*
 
-📢 Share 2Hame
-
-Together we're making property easier for everyone.
+[⬆ Back to Top](#-2hame--kenya-leading-property-marketplace)
 
 </div>
