@@ -6,12 +6,13 @@
     ============================================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f3b2c">
     <title>2Hame — Kenya's #1 Property Marketplace | Buy, Rent, Sell & Manage Real Estate</title>
     <meta name="description" content="2Hame is Kenya's leading PropTech platform for house hunting, property listings, rentals, land sales, property management, and moving services. Find verified properties in Nairobi, Kisumu, Nakuru, Mombasa & nationwide.">
     <meta name="keywords" content="Kenya property listings, house hunting Kenya, apartments for rent, property management, real estate Kenya, land for sale, 2Hame, PropTech, rental management, tenant software">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://2hame.com">
-    
+
     <!-- ============================================================
     OPEN GRAPH / SOCIAL MEDIA META TAGS
     ============================================================ -->
@@ -19,10 +20,12 @@
     <meta property="og:description" content="Find, list, manage, and move — all on Kenya's smartest real estate platform. Verified properties across all 47 counties.">
     <meta property="og:url" content="https://2hame.com">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_KE">
+    <meta property="og:site_name" content="2Hame">
     <meta property="og:image" content="https://2hame.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+
     <!-- ============================================================
     TWITTER CARD
     ============================================================ -->
@@ -30,13 +33,13 @@
     <meta name="twitter:title" content="2Hame — Kenya's #1 Property Marketplace">
     <meta name="twitter:description" content="Find verified properties in Kenya. Rent, buy, sell, and manage real estate with ease.">
     <meta name="twitter:image" content="https://2hame.com/og-image.jpg">
-    
+
     <!-- ============================================================
     FAVICON
     ============================================================ -->
     <link rel="icon" href="https://2hame.com/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="https://2hame.com/favicon.ico">
-    
+
     <!-- ============================================================
     SCHEMA.ORG STRUCTURED DATA (JSON-LD)
     ============================================================ -->
@@ -67,7 +70,7 @@
       }
     }
     </script>
-    
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -81,256 +84,329 @@
       }
     }
     </script>
-    
+
+    <!-- FAQPage schema — mirrors the on-page FAQ verbatim so it's eligible
+         for rich-result snippets in Google Search. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is 2Hame free to use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes! Basic property listings are completely free. Premium features (featured listings, advanced analytics) are available at affordable rates." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I verify a property listing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We verify owners and agents through official documentation (ID, KRA PIN, ownership documents). Verified listings receive a trust badge." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I list land for sale?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We support residential, commercial, agricultural, and investment land listings of all sizes." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is 2Hame available outside Kenya?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Currently focused on Kenya, with plans to expand to other African countries in the coming years." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I contact the property owner?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each listing has a contact form, phone number, and WhatsApp link. Owners and agents respond directly." }
+        }
+      ]
+    }
+    </script>
+
     <!-- ============================================================
     STYLES — Pure CSS, No Dependencies
     ============================================================ -->
     <style>
-        /* ----- RESET & BASE ----- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* ----- DESIGN TOKENS ----- */
+        :root {
+            --forest: #0f3b2c;
+            --forest-light: #1e7b4c;
+            --forest-hover: #145a38;
+            --gold: #b8860b;
+            --gold-light: #d4a017;
+            --ink: #0f172a;
+            --muted: #475569;
+            --bg: #f8fafc;
+            --paper: #ffffff;
+            --line: #e2e8f0;
+            --line-soft: #edf2f7;
+            --radius: 16px;
+            --radius-lg: 24px;
+            --shadow: 0 10px 40px rgba(15, 59, 44, 0.07);
+            --ease: cubic-bezier(0.16, 1, 0.3, 1);
         }
-        
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --ink: #e8ece7;
+                --muted: #a3ab9e;
+                --bg: #0b1410;
+                --paper: #121d17;
+                --line: #223229;
+                --line-soft: #1a271f;
+                --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: #f8fafc;
-            color: #0f172a;
+            background: var(--bg);
+            color: var(--ink);
             line-height: 1.7;
             padding: 20px;
         }
-        
-        a {
-            color: #1e7b4c;
-            text-decoration: none;
+
+        a { color: var(--forest-light); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        a:focus-visible, button:focus-visible, summary:focus-visible {
+            outline: 2.5px solid var(--gold-light);
+            outline-offset: 3px;
+            border-radius: 4px;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            background: #ffffff;
-            border-radius: 24px;
+            background: var(--paper);
+            border-radius: var(--radius-lg);
             padding: 40px 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
         }
-        
+
         /* ----- TYPOGRAPHY ----- */
         h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
             line-height: 1.3;
             margin-top: 1.8rem;
             margin-bottom: 0.8rem;
+            letter-spacing: -0.01em;
         }
         h1 { font-size: 2.6rem; }
-        h2 { font-size: 2.0rem; border-bottom: 3px solid #e2e8f0; padding-bottom: 0.3rem; }
+        h2 { font-size: 2.0rem; border-bottom: 3px solid var(--line); padding-bottom: 0.3rem; }
         h3 { font-size: 1.5rem; }
         h4 { font-size: 1.2rem; }
-        
-        p {
-            margin-bottom: 1.2rem;
+
+        p { margin-bottom: 1.2rem; color: var(--ink); }
+
+        .eyebrow {
+            display: inline-block;
+            font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.4rem;
         }
-        
-        /* ----- HEADER / HERO ----- */
+
+        /* ----- SKIP LINK ----- */
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            background: var(--forest);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            left: 20px;
+            top: 20px;
+        }
+
+        /* ----- HERO ----- */
         .hero {
+            position: relative;
             text-align: center;
-            padding: 20px 0 30px;
-            border-bottom: 2px solid #eef2f6;
+            padding: 28px 0 34px;
+            border-bottom: 2px solid var(--line-soft);
+            overflow: hidden;
         }
+
+        /* Signature element: scattered points drifting into an aligned
+           grid — a literal picture of this page's thesis ("Kenya's real
+           estate market is fragmented. 2Hame brings it into one place"). */
+        .hero-motif {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.55;
+            pointer-events: none;
+        }
+        .hero-motif .scatter circle { animation: settle 9s var(--ease) infinite alternate; }
+        .hero-motif .scatter circle:nth-child(2n) { animation-delay: -2.4s; }
+        .hero-motif .scatter circle:nth-child(3n) { animation-delay: -4.8s; }
+        @keyframes settle {
+            0%   { transform: translate(var(--dx, 0px), var(--dy, 0px)); opacity: 0.35; }
+            100% { transform: translate(0, 0); opacity: 0.9; }
+        }
+
+        .hero-inner { position: relative; z-index: 1; }
+
         .hero img {
-            width: 100px;
-            height: auto;
-            margin-bottom: 10px;
+            width: 84px;
+            height: 84px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: var(--paper);
+            box-shadow: 0 6px 22px rgba(15, 59, 44, 0.18);
         }
         .hero h1 {
             margin-top: 0.2rem;
             font-size: 2.8rem;
-            background: linear-gradient(135deg, #0f3b2c, #1e7b4c);
+            background: linear-gradient(135deg, var(--forest), var(--forest-light) 55%, var(--gold-light));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .hero .tagline {
-            font-size: 1.25rem;
-            color: #334155;
-            font-weight: 500;
-        }
-        .hero .sub {
-            color: #475569;
-            max-width: 700px;
-            margin: 0.5rem auto 1.2rem;
-        }
-        
-        .badge-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 16px;
-        }
+        .hero .tagline { font-size: 1.25rem; color: var(--muted); font-weight: 500; }
+        .hero .sub { color: var(--muted); max-width: 700px; margin: 0.5rem auto 1.2rem; }
+
+        .badge-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px; }
         .badge {
             display: inline-block;
-            background: #eef2f6;
+            background: var(--line-soft);
             padding: 8px 20px;
             border-radius: 40px;
             font-weight: 600;
             font-size: 0.9rem;
-            color: #0f172a;
-            transition: 0.2s;
+            font-variant-numeric: tabular-nums;
+            color: var(--ink);
+            transition: background 0.2s var(--ease), color 0.2s var(--ease), transform 0.2s var(--ease);
         }
-        .badge:hover {
-            background: #1e7b4c;
-            color: #fff;
-            text-decoration: none;
-        }
-        .badge.green {
-            background: #1e7b4c;
-            color: #fff;
-        }
-        .badge.green:hover {
-            background: #145a38;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 14px;
-            margin: 24px 0 10px;
-        }
+        .badge:hover { background: var(--forest-light); color: #fff; text-decoration: none; transform: translateY(-1px); }
+        .badge.green { background: var(--forest-light); color: #fff; }
+        .badge.green:hover { background: var(--forest-hover); }
+
+        .cta-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 24px 0 10px; }
         .btn {
             display: inline-block;
             padding: 14px 32px;
             border-radius: 60px;
             font-weight: 700;
             font-size: 1.05rem;
-            transition: 0.25s;
+            transition: transform 0.2s var(--ease), background 0.2s var(--ease), box-shadow 0.2s var(--ease);
             border: 2px solid transparent;
             text-decoration: none;
         }
-        .btn-primary {
-            background: #1e7b4c;
-            color: #fff;
+        .btn-primary { background: var(--forest-light); color: #fff; box-shadow: 0 8px 24px rgba(30, 123, 76, 0.28); }
+        .btn-primary:hover { background: var(--forest-hover); transform: translateY(-2px) scale(1.02); text-decoration: none; }
+        .btn-outline { background: transparent; border-color: var(--forest-light); color: var(--forest-light); }
+        .btn-outline:hover { background: var(--forest-light); color: #fff; text-decoration: none; }
+
+        /* ----- QUICK NAV ----- */
+        .quicknav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            padding: 10px 8px;
+            margin: 0 -30px 0.5rem;
+            background: color-mix(in srgb, var(--paper) 88%, transparent);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--line-soft);
         }
-        .btn-primary:hover {
-            background: #145a38;
-            transform: scale(1.02);
-            text-decoration: none;
+        .quicknav a {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--muted);
+            padding: 6px 14px;
+            border-radius: 40px;
+            white-space: nowrap;
         }
-        .btn-outline {
-            background: transparent;
-            border-color: #1e7b4c;
-            color: #1e7b4c;
-        }
-        .btn-outline:hover {
-            background: #1e7b4c;
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        /* ----- SECTIONS ----- */
-        section {
-            margin: 3rem 0;
-        }
-        
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-        }
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        
+        .quicknav a:hover { background: var(--line-soft); color: var(--forest-light); text-decoration: none; }
+
+        /* ----- SECTIONS / REVEAL ----- */
+        section { margin: 3rem 0; }
+
+        .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+        .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
         .card {
-            background: #f8fafc;
-            border-radius: 16px;
+            background: var(--bg);
+            border-radius: var(--radius);
             padding: 20px 22px;
-            border: 1px solid #e2e8f0;
-            transition: 0.2s;
+            border: 1px solid var(--line);
+            transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
         }
-        .card:hover {
-            border-color: #1e7b4c;
-            box-shadow: 0 4px 16px rgba(30, 123, 76, 0.08);
-        }
-        .card h4 {
-            margin-top: 0;
-            margin-bottom: 0.4rem;
-        }
-        .card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .card ul li {
-            padding: 4px 0;
-            border-bottom: 1px solid #edf2f7;
-        }
-        .card ul li:last-child {
-            border-bottom: none;
-        }
-        
-        /* ----- TABLES ----- */
-        .table-wrap {
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .card:hover { border-color: var(--forest-light); box-shadow: 0 4px 16px rgba(30, 123, 76, 0.1); transform: translateY(-2px); }
+        .card h4 { margin-top: 0; margin-bottom: 0.4rem; }
+        .card ul { list-style: none; padding-left: 0; }
+        .card ul li { padding: 4px 0; border-bottom: 1px solid var(--line-soft); }
+        .card ul li:last-child { border-bottom: none; }
+
+        .card.soon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
             font-size: 0.95rem;
         }
-        th, td {
-            padding: 12px 14px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        th {
-            background: #f1f5f9;
-            font-weight: 700;
-            color: #0f172a;
-        }
-        tr:hover {
-            background: #f8fafc;
-        }
-        
+
+        /* ----- TABLES ----- */
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+        th { background: var(--line-soft); font-weight: 700; color: var(--ink); }
+        tr:hover { background: var(--bg); }
+
         /* ----- FAQ (collapsible) ----- */
         details {
-            background: #f8fafc;
+            background: var(--bg);
             border-radius: 12px;
             padding: 14px 20px;
             margin-bottom: 12px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--line);
             cursor: pointer;
+            transition: border-color 0.2s var(--ease);
         }
-        details summary {
-            font-weight: 700;
-            font-size: 1.05rem;
-        }
-        details p {
-            margin-top: 10px;
-            margin-bottom: 0;
-            padding-left: 6px;
-        }
-        
+        details[open] { border-color: var(--gold-light); }
+        details summary { font-weight: 700; font-size: 1.05rem; }
+        details summary::marker { color: var(--forest-light); }
+        details p { margin-top: 10px; margin-bottom: 0; padding-left: 6px; color: var(--muted); }
+
         /* ----- FOOTER ----- */
-        .footer {
-            text-align: center;
-            padding-top: 30px;
-            margin-top: 40px;
-            border-top: 2px solid #eef2f6;
-            color: #475569;
-        }
-        .footer .heart {
-            color: #b91c1c;
-        }
-        
+        .footer { text-align: center; padding-top: 30px; margin-top: 40px; border-top: 2px solid var(--line-soft); color: var(--muted); }
+        .footer .heart { color: #b91c1c; }
+
         /* ----- RESPONSIVE ----- */
         @media (max-width: 768px) {
             .container { padding: 20px 16px; }
+            .quicknav { margin: 0 -16px 0.5rem; }
             h1 { font-size: 2.0rem; }
             h2 { font-size: 1.6rem; }
             .hero h1 { font-size: 2.2rem; }
@@ -338,15 +414,23 @@
             .btn { padding: 12px 22px; font-size: 0.95rem; }
             .badge-group { gap: 8px; }
         }
-        
+
         @media (max-width: 480px) {
             body { padding: 10px; }
             .hero h1 { font-size: 1.8rem; }
             .hero .tagline { font-size: 1.05rem; }
         }
+
+        @media print {
+            .quicknav, .cta-buttons, .hero-motif { display: none; }
+            body { padding: 0; background: #fff; }
+            .container { box-shadow: none; }
+        }
     </style>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="container">
 
@@ -354,31 +438,65 @@
     HERO SECTION
     ============================================================ -->
     <header class="hero">
-        <img src="https://2hame.com/favicon.ico" alt="2Hame Logo - Kenya Property Marketplace" width="100" height="100">
-        <h1>2Hame</h1>
-        <p class="tagline">🇰🇪 Kenya's Smart Property Marketplace</p>
-        <p class="sub"><strong>Find • List • Manage • Move</strong> — The all-in-one real estate ecosystem for house hunting, rentals, land sales, property management, and moving services.</p>
-        
-        <div class="cta-buttons">
-            <a href="https://2hame.com" class="btn btn-primary">🌐 Visit 2Hame.com</a>
-            <a href="https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y" class="btn btn-outline">📱 Join WhatsApp</a>
-        </div>
-        
-        <div class="badge-group">
-            <span class="badge green">✅ 10,000+ Listings</span>
-            <span class="badge">📍 47 Counties</span>
-            <span class="badge">🏠 Verified Properties</span>
-            <span class="badge">📊 Free Listings</span>
+        <svg class="hero-motif" viewBox="0 0 1000 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g class="scatter" fill="#1e7b4c">
+                <circle cx="80"  cy="60"  r="4" style="--dx:-30px; --dy:-18px;" />
+                <circle cx="150" cy="200" r="3" style="--dx:22px; --dy:14px;" />
+                <circle cx="230" cy="40"  r="5" style="--dx:-16px; --dy:24px;" />
+                <circle cx="310" cy="220" r="3" style="--dx:28px; --dy:-10px;" />
+                <circle cx="60"  cy="150" r="3" style="--dx:14px; --dy:-26px;" />
+                <circle cx="900" cy="70"  r="4" style="--dx:24px; --dy:-16px;" />
+                <circle cx="830" cy="210" r="3" style="--dx:-20px; --dy:12px;" />
+                <circle cx="950" cy="150" r="5" style="--dx:16px; --dy:22px;" />
+                <circle cx="740" cy="50"  r="3" style="--dx:-24px; --dy:-8px;" />
+                <circle cx="960" cy="230" r="3" style="--dx:12px; --dy:-20px;" />
+            </g>
+            <g fill="#b8860b" opacity="0.7">
+                <circle cx="180" cy="120" r="2.5" />
+                <circle cx="870" cy="130" r="2.5" />
+            </g>
+        </svg>
+
+        <div class="hero-inner">
+            <img src="https://2hame.com/favicon.ico" alt="2Hame Logo - Kenya Property Marketplace" width="84" height="84">
+            <h1>2Hame</h1>
+            <p class="tagline">🇰🇪 Kenya's Smart Property Marketplace</p>
+            <p class="sub"><strong>Find • List • Manage • Move</strong> — The all-in-one real estate ecosystem for house hunting, rentals, land sales, property management, and moving services.</p>
+
+            <div class="cta-buttons">
+                <a href="https://2hame.com" class="btn btn-primary">🌐 Visit 2Hame.com</a>
+                <a href="https://whatsapp.com/channel/0029Vb8ZGajDeOMy2CO8ct2y" class="btn btn-outline">📱 Join WhatsApp</a>
+            </div>
+
+            <div class="badge-group">
+                <span class="badge green">✅ 10,000+ Listings</span>
+                <span class="badge">📍 47 Counties</span>
+                <span class="badge">🏠 Verified Properties</span>
+                <span class="badge">📊 Free Listings</span>
+            </div>
         </div>
     </header>
+
+    <nav class="quicknav" aria-label="Section navigation">
+        <a href="#why">Why 2Hame</a>
+        <a href="#who">Who We Serve</a>
+        <a href="#hunting">House Hunting</a>
+        <a href="#management">Management</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <main id="main">
 
     <!-- ============================================================
     WHY 2HAME
     ============================================================ -->
-    <section>
+    <section id="why" class="reveal">
+        <span class="eyebrow">The Problem</span>
         <h2>🔍 Why 2Hame?</h2>
         <p>The Kenyan real estate market is fragmented. Fake listings, hidden fees, and outdated data make house hunting stressful. <strong>2Hame fixes all of that.</strong></p>
-        
+
         <div class="table-wrap">
             <table>
                 <thead>
@@ -398,7 +516,8 @@
     <!-- ============================================================
     WHO WE SERVE
     ============================================================ -->
-    <section>
+    <section id="who" class="reveal">
+        <span class="eyebrow">Built For</span>
         <h2>🎯 Who We Serve</h2>
         <div class="grid-3">
             <div class="card">
@@ -431,10 +550,11 @@
     <!-- ============================================================
     HOUSE HUNTING
     ============================================================ -->
-    <section>
+    <section id="hunting" class="reveal">
+        <span class="eyebrow">For House Hunters</span>
         <h2>🏠 House Hunting in Kenya</h2>
         <p>Search thousands of verified properties across <strong>Nairobi, Kisumu, Mombasa, Nakuru, Eldoret, Thika, Machakos, Kiambu</strong>, and all 47 counties.</p>
-        
+
         <h3>Property Types</h3>
         <div class="grid-2">
             <div class="card">
@@ -456,7 +576,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <h3>Smart Search Filters</h3>
         <p>📍 County, Town &amp; Estate &bull; 💰 Price Range &bull; 🛏 Bedrooms &amp; Bathrooms &bull; 🏊 Amenities (Pool, Gym, Parking, Security, Solar) &bull; 🏫 Nearby Schools &bull; 🏥 Nearby Hospitals</p>
     </section>
@@ -464,7 +584,8 @@
     <!-- ============================================================
     PROPERTY MANAGEMENT
     ============================================================ -->
-    <section>
+    <section id="management" class="reveal">
+        <span class="eyebrow">For Landlords</span>
         <h2>🛠 Property Management Software</h2>
         <p>Manage <strong>multiple properties</strong> from a single, intuitive dashboard.</p>
         <div class="grid-2">
@@ -490,25 +611,27 @@
     <!-- ============================================================
     COMING SOON
     ============================================================ -->
-    <section>
+    <section id="roadmap" class="reveal">
+        <span class="eyebrow">Roadmap</span>
         <h2>🚀 Coming Soon</h2>
         <div class="grid-3">
-            <div class="card">🧮 Mortgage Calculator</div>
-            <div class="card">🏦 Home Loan Integration</div>
-            <div class="card">🤖 AI House Assistant</div>
-            <div class="card">💳 Rent Collection Automation</div>
-            <div class="card">🔧 Maintenance Requests</div>
-            <div class="card">🛡 Tenant Screening</div>
-            <div class="card">📄 Digital Lease Agreements</div>
-            <div class="card">📱 Mobile Apps (iOS &amp; Android)</div>
-            <div class="card">✅ Property Verification Badge</div>
+            <div class="card soon">🧮 Mortgage Calculator</div>
+            <div class="card soon">🏦 Home Loan Integration</div>
+            <div class="card soon">🤖 AI House Assistant</div>
+            <div class="card soon">💳 Rent Collection Automation</div>
+            <div class="card soon">🔧 Maintenance Requests</div>
+            <div class="card soon">🛡 Tenant Screening</div>
+            <div class="card soon">📄 Digital Lease Agreements</div>
+            <div class="card soon">📱 Mobile Apps (iOS &amp; Android)</div>
+            <div class="card soon">✅ Property Verification Badge</div>
         </div>
     </section>
 
     <!-- ============================================================
     TECHNOLOGY STACK
     ============================================================ -->
-    <section>
+    <section id="tech" class="reveal">
+        <span class="eyebrow">Under The Hood</span>
         <h2>🧰 Technology Stack</h2>
         <div class="grid-2">
             <div class="card">
@@ -553,7 +676,8 @@
     <!-- ============================================================
     MISSION & VISION
     ============================================================ -->
-    <section>
+    <section class="reveal">
+        <span class="eyebrow">Purpose</span>
         <h2>🌍 Mission &amp; Vision</h2>
         <div class="grid-2">
             <div class="card">
@@ -570,29 +694,30 @@
     <!-- ============================================================
     FAQ (STRUCTURED DATA READY)
     ============================================================ -->
-    <section>
+    <section id="faq" class="reveal">
+        <span class="eyebrow">Questions</span>
         <h2>❓ Frequently Asked Questions</h2>
-        
+
         <details>
             <summary><strong>Is 2Hame free to use?</strong></summary>
             <p>Yes! Basic property listings are completely free. Premium features (featured listings, advanced analytics) are available at affordable rates.</p>
         </details>
-        
+
         <details>
             <summary><strong>How do I verify a property listing?</strong></summary>
             <p>We verify owners and agents through official documentation (ID, KRA PIN, ownership documents). Verified listings receive a trust badge.</p>
         </details>
-        
+
         <details>
             <summary><strong>Can I list land for sale?</strong></summary>
             <p>Absolutely. We support residential, commercial, agricultural, and investment land listings of all sizes.</p>
         </details>
-        
+
         <details>
             <summary><strong>Is 2Hame available outside Kenya?</strong></summary>
-            <p>Currently focused on Kenya, but we're expanding to other African countries in 2025.</p>
+            <p>Currently focused on Kenya, with plans to expand to other African countries in the coming years.</p>
         </details>
-        
+
         <details>
             <summary><strong>How do I contact the property owner?</strong></summary>
             <p>Each listing has a contact form, phone number, and WhatsApp link. Owners and agents respond directly.</p>
@@ -602,9 +727,11 @@
     <!-- ============================================================
     SEO KEYWORDS (hidden but readable)
     ============================================================ -->
-    <section style="font-size:0.85rem; color:#64748b; border-top:1px solid #e2e8f0; padding-top:20px;">
+    <section style="font-size:0.85rem; color:var(--muted); border-top:1px solid var(--line); padding-top:20px;">
         <p><strong>🔑 Keywords:</strong> Kenya property listings, house hunting Kenya, apartments for rent Nairobi, property management Kenya, real estate Kenya, land for sale Kenya, rent houses Kenya, property marketplace Kenya, rental management software, tenant management system, landlord software Kenya, moving services Kenya, PropTech Africa, real estate platform Kenya, property listings Nairobi, find houses Kenya, property search Kenya, 2Hame, buy land Kenya, sell property Kenya, commercial property Kenya, student hostels Nairobi, Airbnb Kenya, off-plan projects Kenya, estate management Kenya, property developers Kenya, real estate agents Kenya</p>
     </section>
+
+    </main>
 
     <!-- ============================================================
     FOOTER
@@ -621,13 +748,35 @@
         <p>
             <span class="heart">❤️</span> Built with love in Kenya 🇰🇪
         </p>
-        <p style="font-size:0.9rem; color:#94a3b8;">
+        <p style="font-size:0.9rem; color:var(--muted);">
             &copy; 2026 2Hame — Making property easier for everyone.
         </p>
     </footer>
 
 </div>
 <!-- END container -->
+
+<script>
+    // Scroll-reveal: fade sections up as they enter the viewport.
+    // Respects prefers-reduced-motion by skipping straight to visible.
+    (function () {
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var targets = document.querySelectorAll('.reveal');
+        if (reduceMotion || !('IntersectionObserver' in window)) {
+            targets.forEach(function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        targets.forEach(function (el) { observer.observe(el); });
+    })();
+</script>
 
 </body>
 </html>
